@@ -1,0 +1,58 @@
+
+
+header{
+    .navbar{
+        .navbar-brand{
+            max-width: 40%;
+            img{
+                height: 2.5rem;
+            }
+        }
+        .navbar-toggler{
+            span{
+                width: 30px;
+                height: 3px;
+                background-color: $primary;
+                margin-bottom: 5px;
+                display: block;
+                border: none;
+                &:last-of-type{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+    }
+
+    .navbar-nav{
+
+        .nav-link{
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            letter-spacing: 0.1rem;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media(min-width:576px){
+    header{
+        .navbar{
+            .navbar-brand{
+                max-width: 30%;
+            }
+        }
+    }
+}
+
+@media(min-width:992px){
+    header{
+        .navbar-nav{
+            .nav-item{
+                margin-left: 7.2rem;
+            }
+        }
+    }
+}
