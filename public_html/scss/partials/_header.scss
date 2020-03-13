@@ -6,8 +6,8 @@ header{
             max-width: 40%;
             img{
                 height: 2.5rem;
-            }
-        }
+            } //img
+        } //navbar-brand
         .navbar-toggler{
             span{
                 width: 30px;
@@ -18,14 +18,14 @@ header{
                 border: none;
                 &:last-of-type{
                     margin-bottom: 0px;
-                }
-            }
-        }
+                } //span-last of type
+            } //span
+        } //navbar-toogler
 
-    }
+    } //navbar
 
     .navbar-nav{
-
+      
         .nav-link{
             font-size: 1.4rem;
             line-height: 1.7rem;
@@ -33,20 +33,38 @@ header{
             padding: 10px;
             text-align: center;
             text-transform: uppercase;
-        }
-    }
-}
+           
+        } //nav-link
+    } //navbar-nav
+} //header
 
 @media(min-width:576px){
     header{
         .navbar{
             .navbar-brand{
                 max-width: 30%;
+            } //navbar-brand
+        } //navbar
+        .navbar-nav{
+            .after{
+                border-bottom: 1px solid $primary;
+            } //after
+            .nav-item{
+                 margin-left: 1rem;
+            } //nav-item
+        } //navbar-nav
+     } //header
+} //media 576
+
+@media(min-width:768px){
+    header{
+        .navbar-nav{
+            .nav-item{
+                margin-left: 2.5rem;
             }
         }
     }
-}
-
+} //media 768
 @media(min-width:992px){
     header{
         .navbar-nav{
@@ -55,4 +73,4 @@ header{
             }
         }
     }
-}
+} //media 992
