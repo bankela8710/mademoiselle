@@ -33,8 +33,8 @@ function animation() {
     
     if($('.blog-slider').length > 0){
         $('.blog-slider').owlCarousel({
-            //autoplay: true,
-            //loop:true,
+            autoplay: true,
+            loop:true,
             items:1
            
         });
