@@ -16,4 +16,49 @@ $grid-gutter-blog-width:107px;
     }
     }
 }*/
+.single-blog-section{
+    padding: 65px 0 173px;
+    //padding: 165px 0 273px;
+    h6{
+        font-family: $bodoni;
+        font-size: 1.4rem;
+    }
+    .blog-help{
+        margin: 0 auto auto;
+        
+    }
+    .row{
+        margin-bottom: 70px;
+    }
+    
+    .blogg{
+        border-right: 1px solid $gray-900;
+        padding: 0 10px 0;
+       margin-right: 10px;
+       display: inline-block;
+    }
+    .tags{
+        button{
+            font-family: $bodoni;
+            font-size: 1.6rem;
+            padding: 5px 20px;
+            margin-right: 15px;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}
 
+
+@media(min-width:576px){
+    .single-blog-section{
+    padding: 115px 0 203px;
+    }
+}
+
+@media(min-width:768px){
+    .single-blog-section{
+    padding: 165px 0 273px;
+    }
+}

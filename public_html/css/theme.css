@@ -12422,6 +12422,80 @@ a.text-dark:hover, a.text-dark:focus {
   animation: jump .5s linear alternate infinite;
 }
 
+/* Wobble To Top Right */
+@-webkit-keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes hvr-wobble-to-top-right {
+  16.65% {
+    -webkit-transform: translate(8px, -8px);
+    transform: translate(8px, -8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, 6px);
+    transform: translate(-6px, 6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, -4px);
+    transform: translate(4px, -4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.hvr-wobble-to-top-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-wobble-to-top-right:hover, .hvr-wobble-to-top-right:focus, .hvr-wobble-to-top-right:active {
+  -webkit-animation-name: hvr-wobble-to-top-right;
+  animation-name: hvr-wobble-to-top-right;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
 @font-face {
   font-family: 'Bodoni-Book';
   src: url("fonts/BodoniSvtyTwoITCTT-Book(1)/BodoniSvtyTwoITCTT-Book.eot?#iefix") format("embedded-opentype"), url("fonts/BodoniSvtyTwoITCTT-Book(1)/BodoniSvtyTwoITCTT-Book.woff") format("woff"), url("fonts/BodoniSvtyTwoITCTT-Book(1)/BodoniSvtyTwoITCTT-Book.ttf") format("truetype"), url("fonts/BodoniSvtyTwoITCTT-Book(1)/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book") format("svg");
@@ -12491,6 +12565,16 @@ h3:after {
   font-size: 1.4rem;
   line-height: 1.7rem;
   letter-spacing: 0.1rem;
+}
+
+.first {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.second {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
 }
 
 header .navbar .navbar-brand {
@@ -12708,5 +12792,51 @@ footer .copyright {
     }
     }
 }*/
+.single-blog-section {
+  padding: 65px 0 173px;
+}
+
+.single-blog-section h6 {
+  font-family: "Bodoni-Book";
+  font-size: 1.4rem;
+}
+
+.single-blog-section .blog-help {
+  margin: 0 auto auto;
+}
+
+.single-blog-section .row {
+  margin-bottom: 70px;
+}
+
+.single-blog-section .blogg {
+  border-right: 1px solid #1e1e1e;
+  padding: 0 10px 0;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.single-blog-section .tags button {
+  font-family: "Bodoni-Book";
+  font-size: 1.6rem;
+  padding: 5px 20px;
+  margin-right: 15px;
+}
+
+.single-blog-section .tags button:last-of-type {
+  margin-right: 0;
+}
+
+@media (min-width: 576px) {
+  .single-blog-section {
+    padding: 115px 0 203px;
+  }
+}
+
+@media (min-width: 768px) {
+  .single-blog-section {
+    padding: 165px 0 273px;
+  }
+}
 
 /*# sourceMappingURL=theme.css.map */
