@@ -40,3 +40,60 @@ function animation() {
         });
     }
 
+
+if($('.contact-form').length>0){
+    
+    //FORM VALIDATION
+		$(function () {
+                    $(".contact-form").validate({
+                        highlight: function (element) {
+                            $(element).addClass("is-invalid").removeClass("is-valid");
+                        },
+                        unhighlight: function (element) {
+                            $(element).removeClass('is-invalid').addClass('is-valid');
+                        },
+                        rules: {
+                            name: {
+                                required: true
+                                
+                            },
+                            email:{
+                                required: true,
+                                email:true
+                            },
+                            subject:{
+                                required: true
+                            },
+                            message:{
+                                required: true
+                            }
+
+
+                        },
+                        messages: {
+                              name: {
+                                required:"Field is reguired"
+                                
+                            },
+                            email:{
+                                required:"Field is reguired",
+                                email:"Please enter a valid email adress"
+                            },
+                            subject:{
+                                required: "Field is reguired"
+                            },
+                            message:{
+                                required:" Field is reguired"
+                            }
+
+                        },
+                        errorElement: 'p',
+                        errorPlacement: function (error, element) {
+                            error.appendTo($(element).closest('.form-group').find('.invalid-feedback'));
+                        }
+
+                    });
+                });
+           
+        
+}

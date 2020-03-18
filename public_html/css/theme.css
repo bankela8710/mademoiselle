@@ -2141,7 +2141,7 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .form-text {
@@ -12854,6 +12854,106 @@ footer .copyright {
   .single-blog-section {
     padding: 165px 0 273px;
   }
+}
+
+.contact-section {
+  padding: 100px 0 110px;
+}
+
+.contact-section .contact-form-item {
+  width: 500px;
+  max-width: 100%;
+}
+
+.contact-section .contact-form-item .contact-section-title {
+  font-family: "Bodoni-Book";
+  font-size: 3rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.contact-section .contact-form-item .form-group .form-control {
+  border: none;
+  padding: 12px 0 11px 19px;
+  font-weight: 300;
+  background-color: rgba(37, 61, 97, 0.03);
+}
+
+.contact-section .contact-form-item .form-group .form-control textarea {
+  padding: 12px 0 117px 19px;
+}
+
+.contact-section .contact-form-item .form-group .form-control::placeholder {
+  font-weight: 300;
+  color: #1e1e1e;
+  line-height: 2.5rem;
+}
+
+.contact-section .contact-form-item .form-button .btn-secondary {
+  font-size: 1.4rem;
+  color: #1e1e1e;
+  background-color: transparent;
+}
+
+.contact-section .contact-map {
+  margin-top: 20px;
+}
+
+.contact-section .contact-map .map {
+  width: 450px;
+  max-width: 100%;
+}
+
+@media (min-width: 450px) {
+  .contact-section .contact-map {
+    margin-top: 20px;
+  }
+  .contact-section .contact-map .map {
+    width: 800px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-section {
+    position: relative !important;
+  }
+  .contact-section .contact-form-item {
+    width: 500px;
+  }
+  .contact-section .contact-map {
+    margin-top: 0px;
+    width: 450px;
+    position: absolute;
+    top: 105px;
+    right: 0px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1140px) {
+  .contact-section {
+    position: relative !important;
+  }
+  .contact-section .contact-form-item {
+    width: 500px;
+  }
+  .contact-section .contact-map {
+    width: 480px;
+    position: absolute;
+    top: 105px;
+    right: 0px;
+  }
+}
+
+.contact-info {
+  padding: 6rem 0;
+}
+
+.contact-info .company-address *,
+.contact-info .company-email *,
+.contact-info .company-phone * {
+  color: #1e1e1e;
 }
 
 /*# sourceMappingURL=theme.css.map */
