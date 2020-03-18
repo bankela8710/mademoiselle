@@ -12771,6 +12771,19 @@ header .navbar-nav .nav-link {
   padding: 80px 0px;
 }
 
+.single-services .single-blog-section {
+  padding: 120px 0;
+}
+
+.single-services .single-blog-section h2 {
+  font-size: 4.4rem;
+  line-height: 5rem;
+}
+
+.about-single-services {
+  padding: 0;
+}
+
 footer {
   padding: 50px 0 25px;
 }
