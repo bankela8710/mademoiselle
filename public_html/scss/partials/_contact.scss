@@ -11,7 +11,7 @@ $contact-title:$bodoni;
             font-size: 3rem;
             line-height: 4.5rem;
             letter-spacing: 0.5rem;
-        }
+        }//contact-section-title
 
         .form-group{
             .form-control{
@@ -27,24 +27,24 @@ $contact-title:$bodoni;
                     color: $gray-900;
                     line-height: 2.5rem;
                 }
-            }
-        }
+            }//form-control
+        }//form-group
         .form-button{
             .btn-secondary{
                 font-size: 1.4rem;
                 color: $gray-900;
                 background-color: transparent;
-            }
-        }
-    }
+            }//btn-secondary
+        }//form-button
+    }//contact-fomr-item
     .contact-map{
         margin-top: 20px;
         .map{
         width: 450px;
         max-width: 100%;
         }
-    }
-}
+    }//contact-map
+}//contact-section
 
 
 @media(min-width:450px){
