@@ -95,20 +95,19 @@ if ($('.contact-form').length > 0) {
 
 if ($('.blog-home-slider').length > 0) {
     $('.blog-home-slider').owlCarousel({
-//            autoplay: true,
-//            loop:true,
-
+        autoplay: true,
+        loop: true,
         items: 1,
         nav: true,
         navText: ['<span class="fa fa-chevron-left"></span> <span class="fa fa-chevron-left"></span>', '<span class="fa fa-chevron-right"></span><span class="fa fa-chevron-right"></span>'],
         pagination: true,
-        paginationNumber: true
-        //dots: true,
-        //dotsData: true
+        paginationNumber: true,
+        dots: true,
+        dotsData: true
 
 
     });
-//   $('.owl-prew').each(function () {
-//        $(this).children('span').text($(this).index() + 1);
-//   });
+    $('.owl-dots').each(function () {
+        $(this).children('button').text($(this).index() + 1);
+    });
 }

@@ -12757,6 +12757,17 @@ header .navbar-nav .nav-link {
   line-height: 2.6rem;
 }
 
+.about-home .about-input input {
+  width: 100%;
+  padding: 20px;
+}
+
+.about-home .about-input input::placeholder {
+  font-size: 1.6rem;
+  font-family: "Bodoni-Book";
+  font-style: italic;
+}
+
 .about-home .about-item {
   margin-bottom: 81px;
 }
@@ -12906,11 +12917,29 @@ footer .copyright {
   }
 }
 
-/*.blog-home-slider{
-.owl-dots {
-  
+.blog-home-slider .owl-nav button.owl-prev,
+.blog-home-slider .owl-nav button.owl-next {
+  padding: 0 60px !important;
 }
-}*/
+
+.blog-home-slider .owl-dots {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  max-width: 100%;
+}
+
+.blog-home-slider .owl-dots .owl-dot span {
+  width: 0px;
+  height: 0px;
+  background-color: none;
+  margin-right: 20px;
+  font-size: 1.6rem;
+  font-family: "Bodoni-Book";
+}
+
 .contact-section {
   padding: 100px 0 110px;
 }

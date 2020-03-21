@@ -43,6 +43,19 @@
         font-size: 1.8rem;
         line-height: 2.6rem;  
     }
+    .about-input{
+       
+        input{
+            width: 100%;
+            padding: 20px;
+            &::placeholder{
+                font-size: 1.6rem;
+                font-family: $bodoni;
+               font-style: italic;
+            }
+        }
+       
+    }
     .about-item{
         margin-bottom: 81px;
         .about-content{
